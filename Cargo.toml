@@ -1,0 +1,37 @@
+[package]
+name = "cargo-reg"
+version = "0.1.0"
+authors = ["Evgen Druzhynin <evgen.druzhynin@gmail.com>"]
+readme = "README.md"
+
+license = "Apache-2.0/MIT"
+repository = "https://github.com/dethoter/cargo-reg"
+description = "This extends Cargo to allow you to manage alternative regestries by modifying your `.cargo/config` file from the command line."
+documentation = "https://github.com/dethoter/cargo-reg"
+homepage = "https://github.com/dethoter/cargo-reg"
+
+categories = [
+    "development-tools",
+    "development-tools::cargo-plugins",
+]
+
+keywords = [
+    "cargo",
+    "cargo-subcommand",
+    "cli",
+    "registries",
+    "alternative",
+]
+
+[dependencies]
+clap = "2.31.2"
+console = "0.6.1"
+toml_edit = "0.1.1"
+failure = "0.1.1"
+url = "1.6.0"
+
+[dev-dependencies]
+pretty_assertions = "0.2.1"
+
+[profile.release]
+lto = true
