@@ -1,6 +1,6 @@
 [package]
 name = "cargo-reg"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Evgen Druzhynin <evgen.druzhynin@gmail.com>"]
 readme = "README.md"
 
@@ -35,3 +35,7 @@ pretty_assertions = "0.2.1"
 
 [profile.release]
 lto = true
+
+[[bin]]
+name = "cargo-reg"
+path = "src/bin/main.rs"
